@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ReactNode } from 'react';
+import { ReactNode, CSSProperties } from 'react';
 
 interface ButtonProps {
   children: ReactNode;
@@ -7,6 +7,7 @@ interface ButtonProps {
   variant?: 'primary' | 'secondary' | 'ghost';
   fullWidth?: boolean;
   className?: string;
+  style?: CSSProperties;
 }
 
 export const Button = ({
@@ -14,7 +15,8 @@ export const Button = ({
   onClick,
   variant = 'primary',
   fullWidth = false,
-  className = ''
+  className = '',
+  style
 }: ButtonProps) => {
   const baseStyles = 'rounded-inner px-6 py-3 font-medium touch-feedback';
 
@@ -28,6 +30,7 @@ export const Button = ({
     <motion.button
       className={`${baseStyles} ${variantStyles[variant]} ${fullWidth ? 'w-full' : ''} ${className}`}
       onClick={onClick}
+      style={style}
       whileTap={{ scale: 0.98 }}
     >
       {children}

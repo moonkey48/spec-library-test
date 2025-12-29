@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, MapPin, Clock } from 'lucide-react';
 import { GlassPanel } from '../design-system/GlassPanel';
-import { Body, Caption, AIVoice } from '../design-system/Typography';
+import { Caption, AIVoice } from '../design-system/Typography';
 import { Button } from '../design-system/Button';
 
 interface JITRecommendationProps {
@@ -17,7 +17,6 @@ interface JITRecommendationProps {
 export const JITRecommendation = ({
   isVisible,
   onClose,
-  title,
   reason,
   distance,
   estimatedTime,
