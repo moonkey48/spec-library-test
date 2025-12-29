@@ -66,7 +66,7 @@ export const JourneyScreen = () => {
 
         {/* Emergency controls - very large touch targets */}
         <div className="grid grid-cols-2 gap-driving">
-          <Button variant="ghost" className="h-20 text-lg">
+          <Button variant="ghost" className="h-20 text-lg text-white">
             일시정지
           </Button>
           <Button variant="secondary" className="h-20 text-lg">

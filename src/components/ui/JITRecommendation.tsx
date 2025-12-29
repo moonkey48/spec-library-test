@@ -43,10 +43,9 @@ export const JITRecommendation = ({
 
             <div className="mb-4">
               <Caption className="text-xs uppercase tracking-wide mb-2">
-                적시 추천 (Just-in-Time)
+                Just-in-Time
               </Caption>
-              <Body className="font-bold mb-3">{title}</Body>
-              <AIVoice className="text-gray-800">{reason}</AIVoice>
+              <AIVoice className="text-gray-800 font-semibold">{reason}</AIVoice>
             </div>
 
             <div className="flex gap-4 mb-4">
@@ -61,7 +60,15 @@ export const JITRecommendation = ({
             </div>
 
             <div className="flex gap-2">
-              <Button variant="ghost" onClick={onClose} className="flex-1">
+              <Button
+                onClick={onClose}
+                className="flex-1 bg-[#6F6F6F] text-[#E9E9E9] border-none shadow-none"
+                style={{
+                  backgroundColor: '#6F6F6F',
+                  color: '#E9E9E9',
+                  border: 'none'
+                }}
+              >
                 다음에
               </Button>
               <Button onClick={onAccept} className="flex-1">
