@@ -1,7 +1,6 @@
-import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { MapPin, Clock, Star, ArrowRight } from 'lucide-react';
+import { Star, ArrowRight } from 'lucide-react';
 import { H1, Body, Caption } from '../components/design-system/Typography';
 import { Button } from '../components/design-system/Button';
 import { DecisionCard } from '../components/ui/DecisionCard';

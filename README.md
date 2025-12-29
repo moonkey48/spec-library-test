@@ -51,6 +51,34 @@ The app will open at `http://localhost:3000`
 npm run build
 ```
 
+## Deploy to Vercel
+
+### Option 1: Using Vercel CLI
+
+```bash
+# Install Vercel CLI globally
+npm install -g vercel
+
+# Deploy
+vercel
+```
+
+### Option 2: Using Vercel Dashboard
+
+1. Push your code to GitHub/GitLab/Bitbucket
+2. Go to [vercel.com](https://vercel.com)
+3. Click "New Project"
+4. Import your repository
+5. Vercel will automatically detect Vite settings
+6. Click "Deploy"
+
+### Environment
+
+The project includes `vercel.json` configuration for optimal deployment:
+- Auto-detects Vite framework
+- Configures SPA routing (all routes → index.html)
+- Build output: `dist/`
+
 ## Screen Flow
 
 1. `/onboarding` - Preference selection

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { H1, Body } from '../components/design-system/Typography';
@@ -25,7 +24,7 @@ const alternatives = [
 export const CoordinationScreen = () => {
   const navigate = useNavigate();
 
-  const handleResolve = (selectedId: string) => {
+  const handleResolve = () => {
     setTimeout(() => {
       navigate('/route');
     }, 500);

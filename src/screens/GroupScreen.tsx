@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Users, Plus, ArrowRight } from 'lucide-react';
+import { Plus, ArrowRight } from 'lucide-react';
 import { H1, Body, AIVoice } from '../components/design-system/Typography';
 import { Button } from '../components/design-system/Button';
 import { GlassPanel } from '../components/design-system/GlassPanel';
